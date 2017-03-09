@@ -1,8 +1,8 @@
 build:
   image: node:6.10-alpine
   commands:
-    - make install
-    - make test
+  - yarn install
+  #- yarn test
 
 publish:
   docker:
