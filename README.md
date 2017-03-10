@@ -5,6 +5,12 @@
 
 Drone plugin to publish files and artifacts to NuGet repository. For the usage information and a listing of the available options please take a look at [the docs](DOCS.md).
 
+## White-listing
+From the [Drone plugin developer documentation](http://readme.drone.io/0.4/devs/plugins/#custom-plugins):
+>Custom Drone plugins also *must* be white-listed. The plugin white-list is provided to the Drone server using the `PLUGIN_FILTER` environment variable. This variables is a space-separated list of patterns for matching trusted plugins:
+
+>`PLUGIN_FILTER=plugins/* quay.io/urbit/*`
+
 ## Execute
 
 Install the deps using [npm](https://docs.npmjs.com/getting-started/installing-npm-packages-locally) or [yarn](https://yarnpkg.com/en/docs/cli/install):
